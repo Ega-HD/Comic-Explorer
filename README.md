@@ -1,2 +1,2 @@
 # Comic-Explorer
-Website kumpulan komik yang dimocot online
+Website kumpulan komik yang dicomot online
