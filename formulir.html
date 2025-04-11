@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir oh Formulir</title>
+</head>
+<body>
+    <h1>I gonna try to make a form with some input</h1>
+    <article>
+        <p>Tata letak input dapat diatur menggunakan block element atau table supaya sejajar</p>
+    </article>
+    <article>
+        <p>Ada pula type inputan radio checkbox bahkan button submit reset</p>
+        <p>Atribut name itu untuk menyalurkan data, id untuk memetakan label for, kemudian ada value yang bisa digunakan untuk mengatur default data atau memberi penjelasan jika inputan semacam radio</p>
+    </article>
+    <form action="/hiyahhError" method="get">
+        <!-- Bisa mengatur tata letak dengan table atau div block elementl bahkan <p> -->
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Nama Lengkap</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Nama" id="name" name="nama">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email Anda</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Email" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="Password" id="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Phone Number" id="phone" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="volume">Volume</label>
+                    </td>
+                    <td>
+                        <input type="range" id="volume" name="volume" value="0"><!-- Tak bisa menggunakan placeholder maka pake label-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <input type="reset" value="Reset">
+                        <button type="submit">Submit</button><!-- Tak bisa menggunakan placeholder maka pake label-->
+                    </td>
+                </tr>
+            </table>
+            
+            <hr>
+            
+            <p>
+                <label for="">Apa warna kesukaan anda?</label>
+            </p>
+            <input type="radio" name="favcolor" id="favcolor1" value="red"> <label for="favcolor1">Merah</label>
+            <input type="radio" name="favcolor" id="favcolor2" value="green" checked> <label for="favcolor2">Hijau</label>
+            <input type="radio" name="favcolor" id="favcolor3" value="yellow"> <label for="favcolor3">Kuning</label>
+            <input type="radio" name="favcolor" id="favcolor4" value="grey"> <label for="favcolor4">Abu-abu</label>
+
+            <p>
+                <label for="developer">Ingin menjadi developer apa?(website, mobile, game, desktop)</label>
+            </p>
+            <input type="text" minlength="4" maxlength="10" name="developer" id="developer" required>
+            
+            <p>
+                <label for="age">Sekarang umur berapa?</label>
+            </p>
+            <input type="number" name="umur" id="age" min="12" max="35">
+            
+            <p>
+                <input type="checkbox" name="term" id="persetujuan" value="semoga konsisten">
+                <label for="persetujuan">Menyetujui bahwa anda akan secara konsisten belajar web development supaya dapat menggapai apa yang saudara cita citakan</label>
+            </p>
+            <label for="note">Keterangan Tambahan</label>
+            <textarea name="catatan" id="note" cols="40" rows="5" placeholder="Tulis uneg uneg apa yang sekiranya perlu"></textarea>
+            
+            <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
